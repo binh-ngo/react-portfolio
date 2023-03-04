@@ -6,8 +6,6 @@ import {
   DiNodejs,
   DiMongodb,
   DiGit,
-  DiMysql,
-  DiJqueryLogo,
 } from "react-icons/di";
 
 function Techstack() {
