@@ -594,9 +594,15 @@ button:focus {
     padding-top: 0 !important;
   }
 }
-/* --------- */
 /* Resume */
-/* --------- */
+
+.contact-section {
+  position: relative !important;
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
 
 .resume-section {
   position: relative !important;
@@ -736,4 +742,9 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* Contact */
+.form-control {
+
 }
