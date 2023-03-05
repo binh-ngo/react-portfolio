@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import eatsy from "../../assets/Screenshot 2023-03-05 at 1.30.27 PM.png";
+import videoShare from "../../assets/Screenshot 2023-03-05 at 1.29.22 PM.png";
 
 function Projects() {
   return (
@@ -14,7 +16,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={""}
+              imgPath={eatsy}
               isBlog={false}
               title="Eatsy"
               description="Food delivery service for homecooks. Built with React.js, Bootstrap, Socket.io, Node.js, and MongoDB."
@@ -25,7 +27,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={""}
+              imgPath={videoShare}
               isBlog={false}
               title="Video-Share"
               description="Video conferencing website deployed on Heroku. Allows the user to share their screen, videos, and real-time text chat due to Socket.io. Also utilized Materialize, Sequelize, and Node.js."

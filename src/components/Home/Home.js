@@ -19,7 +19,6 @@ function Home() {
                   🤙🏽
                 </span>
               </h1>
-
               <h1 className="heading-name">
                 I'M
                 <strong className="main-name"> Binh-Nguyen Ngo</strong>
@@ -37,7 +36,7 @@ function Home() {
                 src={profile}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "500px" }}
+                style={{ maxHeight: "600px" }}
               />
             </Col>
           </Row>
