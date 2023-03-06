@@ -7,15 +7,15 @@ function Contact() {
     event.preventDefault();
     alert("Email sent!")
   }
-  const isValidEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+  // const isValidEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
-const validateEmail = (e) => {
-  if(e.target?.value && e.target.value.match(isValidEmail)){
-    return false;
-  }else{
-    return true;
-  }
-}
+// const validateEmail = (e) => {
+//   if(e.target?.value && e.target.value.match(isValidEmail)){
+//     return false;
+//   }else{
+//     return true;
+//   }
+// }
 
   return (
     <div className="contact-section">
@@ -27,7 +27,8 @@ const validateEmail = (e) => {
   
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" onChange={validateEmail}/>
+          <Form.Control type="email" placeholder="Enter email" /> 
+          {/* onChange={validateEmail} */}
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicSubject">
