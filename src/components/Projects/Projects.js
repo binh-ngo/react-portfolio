@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import eatsy from "../../assets/Screenshot 2023-03-05 at 1.30.27 PM.png";
+import eatsy from "../../assets/eatsy.png";
 import videoShare from "../../assets/Screenshot 2023-03-05 at 1.29.22 PM.png";
 
 function Projects() {
