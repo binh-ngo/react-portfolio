@@ -394,17 +394,12 @@ button:focus {
   color: #2b72eb !important;
 }
 
-/* --------- */
 /* Footer */
-/* --------- */
 .footer {
   background-color: #0f1c3fa9;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
-}
-.footer-copywright {
-  text-align: center !important;
 }
 
 .footer-body {
