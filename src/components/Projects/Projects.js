@@ -17,7 +17,7 @@ function Projects() {
               imgPath={eatsy}
               isBlog={false}
               title="Eatsy"
-              description="Food delivery service for homecooks. Built with React.js, Bootstrap, Socket.io, Node.js, and MongoDB."
+              description="Food based social media platform for home cooks. Built with React.js, Bootstrap, Socket.io, Node.js, and MongoDB."
               ghLink="https://github.com/binh-ngo/eatsy-front-end"
               demoLink="https://eatsyfoods.netlify.app/"
             />
