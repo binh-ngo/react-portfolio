@@ -19,7 +19,7 @@ function Projects() {
               title="Eatsy"
               description="Food delivery service for homecooks. Built with React.js, Bootstrap, Socket.io, Node.js, and MongoDB."
               ghLink="https://github.com/binh-ngo/eatsy-front-end"
-              demoLink=""
+              demoLink="https://eatsyfoods.netlify.app/"
             />
           </Col>
 
