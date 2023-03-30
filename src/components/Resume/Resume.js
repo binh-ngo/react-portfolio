@@ -9,6 +9,8 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
+// if resume is updated, replace the old resume with the new one so that it has the same name
+// then build, synth, deploy
   "https://raw.githubusercontent.com/binh-ngo/react-portfolio/main/src/assets/coding-resume.pdf";
 
   function Resume() {
