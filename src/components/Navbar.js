@@ -11,7 +11,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  AiOutlinePhone,
+  // AiOutlinePhone,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -102,7 +102,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/contact"
@@ -110,7 +110,7 @@ function NavBar() {
               >
                 <AiOutlinePhone style={{ marginBottom: "2px" }} /> Contact Me
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item className="fork-btn">
               <Button

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdf from "../../assets/coding-resume.pdf";
+import pdf from "../../assets/codingresume-3-30.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/binh-ngo/react-portfolio/main/src/assets/coding-resume.pdf";
+  "https://raw.githubusercontent.com/binh-ngo/react-portfolio/main/src/assets/codingresume-3-30.pdf";
 
 function Resume() {
   const [width, setWidth] = useState(1200);
