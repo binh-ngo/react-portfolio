@@ -1,12 +1,12 @@
 import { CfnOutput, Environment, RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib';
 import { CloudFrontAllowedMethods, CloudFrontWebDistribution, OriginAccessIdentity, ViewerCertificate } from 'aws-cdk-lib/aws-cloudfront';
-// import { CanonicalUserPrincipal, PolicyStatement } from 'aws-cdk-lib/aws-iam';
+import { CanonicalUserPrincipal, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 import { AaaaRecord, ARecord, IHostedZone, RecordTarget } from 'aws-cdk-lib/aws-route53';
 import { CloudFrontTarget } from 'aws-cdk-lib/aws-route53-targets';
 // import { Source } from 'aws-cdk-lib/aws-codebuild';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment';
-import { Construct } from 'constructs';
+// import { Construct } from 'constructs';
 // import * as sqs from 'aws-cdk-lib/aws-sqs';
 
 interface ReactPortfolioStackProps extends StackProps {
@@ -15,9 +15,9 @@ interface ReactPortfolioStackProps extends StackProps {
   viewerCertificate: ViewerCertificate;
   zone: IHostedZone;
 }
-export class CdkStack extends Stack {
-  constructor(scope: Construct, id: string, props: ReactPortfolioStackProps) {
-    super(scope, id, props);
+export class ReactPortfolioStack extends Stack {
+  constructor(parent: Stack, id: string, props: ReactPortfolioStackProps) {
+    super(parent, id, props);
 
     const cloudfrontOAI = new OriginAccessIdentity(this, "CloudFrontOAI", {
       comment: `OAI for ${id}`,
@@ -33,17 +33,17 @@ export class CdkStack extends Stack {
 
     // grants permissions to an AWS account
 
-  // bucket.addToResourcePolicy(
-  //   new PolicyStatement({
-  //     actions: ["s3:GetObject"],
-  //     resources: [bucket.arnForObjects("*")],
-  //     principals: [
-  //       new CanonicalUserPrincipal(
-  //         cloudfrontOAI.cloudFrontOriginAccessIdentityS3CanonicalUserId
-  //       ),
-  //     ],
-  //   })
-  // );
+  bucket.addToResourcePolicy(
+    new PolicyStatement({
+      actions: ["s3:GetObject"],
+      resources: [bucket.arnForObjects("*")],
+      principals: [
+        new CanonicalUserPrincipal(
+          cloudfrontOAI.cloudFrontOriginAccessIdentityS3CanonicalUserId
+        ),
+      ],
+    })
+  );
 
   new CfnOutput(this, "Bucket", { value: bucket.bucketName });
 
@@ -60,20 +60,20 @@ export class CdkStack extends Stack {
         behaviors: [
           {
             isDefaultBehavior: true,
-            compress: true,
-            allowedMethods: CloudFrontAllowedMethods.GET_HEAD_OPTIONS
+            // compress: true,
+            // allowedMethods: CloudFrontAllowedMethods.GET_HEAD_OPTIONS
           }
         ],
       },
     ],
-    errorConfigurations: [
-      {
-        errorCode: 403,
-        errorCachingMinTtl: 10,
-        responseCode: 200,
-        responsePagePath: "/index.html"
-      },
-    ],
+    // errorConfigurations: [
+    //   {
+    //     errorCode: 403,
+    //     errorCachingMinTtl: 10,
+    //     responseCode: 200,
+    //     responsePagePath: "/index.html"
+    //   },
+    // ],
   }
   );
   new ARecord(this, "ARecord", {

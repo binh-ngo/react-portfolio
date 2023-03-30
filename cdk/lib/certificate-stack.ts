@@ -38,7 +38,6 @@ export class CertificateStack extends Stack {
     });
     const certificateArn = certificate.certificateArn;
     new CfnOutput(this, "Certificate", { value: certificateArn });
-
     this.viewerCertificate = ViewerCertificate.fromAcmCertificate(
       {
         certificateArn: certificateArn,
