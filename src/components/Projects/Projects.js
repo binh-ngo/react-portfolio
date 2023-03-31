@@ -41,7 +41,6 @@ function Projects() {
               title="E-Commerce Database"
               description="This application is a mysql database and backend app for an e-commerce site. With this app, you have full CRUD functionality allowing you to create, receive, update, and delete various items in this online store."
               ghLink="https://github.com/binh-ngo/e-commerce-back-end"
-              demoLink="#"
             />
           </Col>
 
@@ -52,7 +51,6 @@ function Projects() {
               title="Employee Tracker"
               description="This application allows the user to work in a database that can dynamically change the composition of a company. You can create, delete, and update various things such as departments, roles, and employees. "
               ghLink="https://github.com/binh-ngo/employee-tracker"
-              demoLink="#"
             />
           </Col>
 
@@ -63,7 +61,6 @@ function Projects() {
               title="Daily Schedule App"
               description="I created a program that allows the user to manage their daily schedule. Hour blocks are colored based on their relationship to the current time of the local machine (which is shown at the top of the page) that the user is using. The user is able to type what they need to do during the specific time-blocks and they can save it to the local storage after clicking the provided button. The program then retrieves the task from the local storage so the burden of remembering the tasks is solely the computer's responsibility."
               ghLink="https://github.com/binh-ngo/daily-schedule"
-              demoLink="#"
             />
           </Col>
 
@@ -74,7 +71,6 @@ function Projects() {
               title="README Generator"
               description="This application is a README generator that is used from the command line. The application provides a series of prompts in order to obtain information from the user to create a professional README."
               ghLink="https://github.com/binh-ngo/README-generator"
-              demoLink="#"
             />
           </Col>
         </Row>

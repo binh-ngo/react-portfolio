@@ -24,9 +24,7 @@ class MyPortfolio extends Stack {
       zone: certificate.zone,
     })
   }
-}
-
-console.log("dotenv: " + JSON.stringify(process.env))
+} 
 
 new MyPortfolio(app, "BinhNgoPortfolio", {
   env: {
