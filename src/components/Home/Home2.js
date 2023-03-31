@@ -33,16 +33,16 @@ function Home2() {
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="blue">Node.js</b> and
+              utilizing <b className="blue">AWS' Cloud Development Kit</b> and
               <i>
                 <b className="blue">
                   {" "}
-                  Modern Javascript Frameworks
+                  Modern Frameworks
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="blue"> React.js</b>
+                <b className="blue"> React.js and Typescript.</b>
               </i>
             </p>
           </Col>

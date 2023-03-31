@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { SiAmazonaws, SiTypescript } from "react-icons/si"
 import {
   DiJavascript1,
   DiReact,
@@ -11,6 +12,12 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazonaws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>

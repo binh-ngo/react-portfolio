@@ -6,13 +6,29 @@ import {
   SiHeroku,
   SiInsomnia,
   SiGnometerminal,
+  SiAmazons3,
+  SiAmazondynamodb,
+  SiNetlify,
+  SiJest,
 } from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
+        <SiAmazondynamodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazons3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJest />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNetlify />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiInsomnia />
