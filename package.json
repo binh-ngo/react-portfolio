@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-cdk/aws-route53-patterns": "^1.198.1",
     "@emailjs/browser": "^3.10.0",
     "@react-pdf/renderer": "^3.1.6",
     "@testing-library/jest-dom": "^5.16.5",
