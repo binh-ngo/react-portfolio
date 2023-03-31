@@ -3,6 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import eatsy from "../../assets/eatsy.png";
 import videoShare from "../../assets/Screenshot 2023-03-05 at 1.29.22 PM.png";
+import dailySchedule from "../../assets/dailyschedule.png";
+import ecommerce from "../../assets/ecommerce.jpg"
+import readme from "../../assets/readme.png"
+import employee from "../../assets/employee.jpg"
 
 function Projects() {
   return (
@@ -36,7 +40,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="#"
+              imgPath={ecommerce}
               isBlog={false}
               title="E-Commerce Database"
               description="This application is a mysql database and backend app for an e-commerce site. With this app, you have full CRUD functionality allowing you to create, receive, update, and delete various items in this online store."
@@ -46,7 +50,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="#"
+              imgPath={employee}
               isBlog={false}
               title="Employee Tracker"
               description="This application allows the user to work in a database that can dynamically change the composition of a company. You can create, delete, and update various things such as departments, roles, and employees. "
@@ -56,7 +60,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="#"
+              imgPath={dailySchedule}
               isBlog={false}
               title="Daily Schedule App"
               description="I created a program that allows the user to manage their daily schedule. Hour blocks are colored based on their relationship to the current time of the local machine (which is shown at the top of the page) that the user is using. The user is able to type what they need to do during the specific time-blocks and they can save it to the local storage after clicking the provided button. The program then retrieves the task from the local storage so the burden of remembering the tasks is solely the computer's responsibility."
@@ -66,7 +70,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath="#"
+              imgPath={readme}
               isBlog={false}
               title="README Generator"
               description="This application is a README generator that is used from the command line. The application provides a series of prompts in order to obtain information from the user to create a professional README."
