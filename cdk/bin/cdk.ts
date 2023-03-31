@@ -2,6 +2,7 @@
 import { App, Environment, Stack, StackProps } from "aws-cdk-lib";
 import { CertificateStack } from "../lib/certificate-stack";
 import { ReactPortfolioStack } from "../lib/react-portfolio-stack";
+import { HttpsRedirectStack } from "../lib/redirect-stack";
 require("dotenv").config({ path: "./.env" });
 
 const targetRegion = "us-east-1";
@@ -25,6 +26,12 @@ class MyPortfolio extends Stack {
     })
   }
 } 
+new HttpsRedirectStack(app, "HttpsRedirectStack", {
+  env: {
+    region: targetRegion,
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+  }
+})
 
 new MyPortfolio(app, "BinhNgoPortfolio", {
   env: {
@@ -32,17 +39,4 @@ new MyPortfolio(app, "BinhNgoPortfolio", {
     account: process.env.CDK_DEFAULT_ACCOUNT,
   },
 });
-
-
-// #!/usr/bin/env node
-// import 'source-map-support/register';
-// import * as cdk from 'aws-cdk-lib';
-// import { CdkStack } from '../lib/cdk-stack';
-
-// const app = new cdk.App();
-// new CdkStack(app, 'CdkStack', {
-//   env: {
-//     region: 'us-east-1'
-//   }
-// });
 

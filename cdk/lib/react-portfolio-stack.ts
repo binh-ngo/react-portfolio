@@ -1,25 +1,16 @@
 import { CfnOutput, Environment, RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib';
-import { CloudFrontAllowedMethods, CloudFrontWebDistribution, OriginAccessIdentity, ViewerCertificate } from 'aws-cdk-lib/aws-cloudfront';
+import { CloudFrontWebDistribution, OriginAccessIdentity, ViewerCertificate } from 'aws-cdk-lib/aws-cloudfront';
 import { CanonicalUserPrincipal, PolicyStatement } from 'aws-cdk-lib/aws-iam';
-import { AaaaRecord, ARecord, HostedZone, IHostedZone, RecordTarget } from 'aws-cdk-lib/aws-route53';
-import { HttpsRedirect } from 'aws-cdk-lib/aws-route53-patterns';
+import { AaaaRecord, ARecord, IHostedZone, RecordTarget } from 'aws-cdk-lib/aws-route53';
 import { CloudFrontTarget } from 'aws-cdk-lib/aws-route53-targets';
-// import { Source } from 'aws-cdk-lib/aws-codebuild';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment';
-// import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
 
 interface ReactPortfolioStackProps extends StackProps {
   env: Environment;
   siteDomain: string;
   viewerCertificate: ViewerCertificate;
   zone: IHostedZone;
-  // needed for redirect
-  readonly redirectToApex? : boolean;
-  readonly zoneName : string;
-  readonly zoneId? : string;
-
 }
 export class ReactPortfolioStack extends Stack {
   constructor(parent: Stack, id: string, props: ReactPortfolioStackProps) {
@@ -29,13 +20,6 @@ export class ReactPortfolioStack extends Stack {
       comment: `OAI for ${id}`,
     })
 
-    const domainName = props.redirectToApex ? props.zoneName : `www.${props.zoneName}`;
-    const redirectDomainName = props.redirectToApex ? `www.${props.zoneName}` : props.zoneName;
-    
-    const zone = props.zoneId ? HostedZone.fromHostedZoneAttributes(this, 'HostedZone', {
-      hostedZoneId: props.zoneId,
-      zoneName: props.zoneName,
-  }) : HostedZone.fromLookup(this, 'HostedZone', { domainName: props.zoneName });
     // S3
   const bucket = new Bucket(this, "ReactPortfolioBucket", {
     bucketName: "binhngo.me",
@@ -108,12 +92,6 @@ export class ReactPortfolioStack extends Stack {
     distribution: cf,
     distributionPaths: ["/*"]
   });
-
-  new HttpsRedirect(this, "Redirect", {
-    zone,
-    recordNames: [redirectDomainName],
-    targetDomain: domainName,
-  })
 
 }
 }
