@@ -31,23 +31,22 @@ function Contact() {
   return (
     <div className="contact-section">
       <Form ref={form} onSubmit={sendEmail}>
-        <Form.Group className="mb-3" controlId="formBasicName">
+        <Form.Group className="mb-3 info" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" name="user_name" placeholder="Enter name" required/>
         </Form.Group>
   
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3 info" controlId="formBasicEmail">
           <Form.Label>Email</Form.Label>
           <Form.Control type="email" name="user_email" placeholder="Enter email" required/> 
-          {/* onChange={validateEmail} */}
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicMessage">
+        <Form.Group className="mb-3 info" controlId="formBasicMessage">
           <Form.Label>Message</Form.Label>
-          <Form.Control name="message" type="text" placeholder="Enter message" required/>
+          <Form.Control contentEditable="true" name="message" type="text" placeholder="Enter message" required/>
         </Form.Group>
 
-        <input type="submit" value="Send" />
+        <input className="contactBtn" type="submit" value="Send" />
       </Form>
     </div>
     );

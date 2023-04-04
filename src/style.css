@@ -588,14 +588,6 @@ button:focus {
 }
 /* Resume */
 
-.contact-section {
-  position: relative !important;
-  padding-top: 110px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
-}
-
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
@@ -737,6 +729,32 @@ button:focus {
 }
 
 /* Contact */
-.form-control {
+.contact-section {
+  position: relative !important;
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
 
+#formBasicMessage {
+  height: 10rem;
+  width: 50%;
+  margin-left: 25%;
+}
+#formBasicEmail {
+  width: 50%;
+  margin-left: 25%;
+}
+#formBasicName {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.contactBtn {
+  background-color: #2b72eb;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 40px;
 }
