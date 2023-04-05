@@ -18,7 +18,7 @@ function Home() {
                 </span>
               </h1>
               <h1 className="heading-name">
-                I'M
+                I'm
                 <strong className="main-name"> Binh-Nguyen Ngo</strong>
                 <br/>
                 But you can call me Binh.
