@@ -9,6 +9,7 @@ function Type() {
           "Creator",
           "Full Stack MERN Developer",
           "Open Source Contributor",
+          "Code Blogger"
         ],
         autoStart: true,
         loop: true,
