@@ -2,33 +2,33 @@ name: Deploy AWS CDK
 
 # controls when these actions will rn
 on: [push]
-  workflow_dispatch: 
 
 jobs:
   aws_cdk:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout repo
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "16.3.0"
-
-      - name: Install dependencies
-        run: npm i
-
-      # - name: cdk diff
-      #   uses: youyo/aws-cdk-github-actions@v2.1.3
+      # - name: Checkout repo
+      #   uses: actions/checkout@v2
+      # - uses: actions/setup-node@v2
       #   with:
-      #     cdk_subcommand: 'diff'
-      #   env:
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-      #     AWS_DEFAULT_REGION: 'us-east-1'
+      #     node-version: "16.3.0"
+
+      # - name: Install dependencies
+      #   run: npm i
+
+      - name: cdk diff
+        uses: youyo/aws-cdk-github-actions@v2
+        with:
+          cdk_subcommand: 'diff'
+          actions_comment: true
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-1'
 
       - name: cdk deploy
-        uses: youyo/aws-cdk-github-actions@v2.1.3
+        uses: youyo/aws-cdk-github-actions@v2
         with:
           cdk_subcommand: 'deploy'
           cdk_args: '--require-approval never'
