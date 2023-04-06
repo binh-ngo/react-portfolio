@@ -4,9 +4,11 @@ on: [push, workflow_dispatch]
 jobs:
   aws_cdk:
     runs-on: ubuntu-latest
+    strategy:
+      matrix: [10.x, 12.x, 14.x, 16.x, 19.x]
     steps:
 
-      - name: Checkout repo
+      - name: Checkout Repo
         uses: actions/checkout@v2
 
       - name: Configure aws credentials
@@ -16,20 +18,15 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: 'us-east-1'
 
-      - name: Install Node
-        run: 'sudo apt update -y && sudo apt install nodejs npm -y'
-      
-      - name: Install AWS CDK
-        run: 'sudo npm install -g aws-cdk'
-      
-      - name: Install dependencies
+      - name: Install Dependencies and Build
         run: 'npm i'
-        working-directory: cdk
+        npm: 'npm run build'
+        working-directory: ./cdk
 
       - name: CDK Synth
         run: 'cdk synth'
-        working-directory: cdk
+        working-directory: ./cdk
 
       - name: CDK Deploy 
         run: 'cdk deploy --all --require-approval never'
-        working-directory: cdk
+        working-directory: ./cdk
