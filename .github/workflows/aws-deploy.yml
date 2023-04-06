@@ -35,10 +35,10 @@ jobs:
       #     AWS_DEFAULT_REGION: 'us-east-1'
 
       - name: CDK Deploy
-      - run: 'cdk deploy'
-      - working_directory: 'cdk'
+        run: 'cdk deploy'
+        working_directory: 'cdk'
 
       - name: CDK Synth
-      - run: 'cdk synth'
-      - working_directory: 'cdk'
+        run: 'cdk synth'
+        working_directory: 'cdk'
 
