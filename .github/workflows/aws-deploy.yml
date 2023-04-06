@@ -25,10 +25,6 @@ jobs:
       - name: Install dependencies
         run: 'npm i'
         working-directory: cdk
-    
-      - name: CDK Diff
-        run: 'cdk diff'
-        working-directory: cdk
 
       - name: CDK Synth
         run: 'cdk synth'
