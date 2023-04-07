@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Navigate into CDK folder
-        run: 'cd cdk'
+        run: 'cd ../cdk'
 
       - name: cdk diff
         uses: youyo/aws-cdk-github-actions@v2
