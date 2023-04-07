@@ -4,8 +4,6 @@ on: [push, workflow_dispatch]
 jobs:
   aws_cdk:
     runs-on: ubuntu-latest
-    strategy:
-      matrix: [10.x, 12.x, 14.x, 16.x, 19.x]
     steps:
 
       - name: Checkout Repo
