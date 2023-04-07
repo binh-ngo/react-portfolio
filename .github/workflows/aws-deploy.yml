@@ -17,8 +17,7 @@ jobs:
           aws-region: 'us-east-1'
 
       - name: Install Dependencies and Build
-        run: 'npm i'
-        run: 'npm run build'
+        run: 'npm i && npm run build'
         working-directory: ./cdk
 
       - name: CDK Synth
