@@ -5,8 +5,11 @@ jobs:
   aws_cdk:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        
       - name: Navigate into CDK folder
-        run: 'cd cdk'
+        run: 'cd ../cdk'
 
       - name: cdk diff
         uses: youyo/aws-cdk-github-actions@v2
