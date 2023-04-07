@@ -1,13 +1,14 @@
 name: AWS Deploy with Github Actions
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   aws_cdk:
     runs-on: ubuntu-latest
     steps:
+      - name: Navigate into CDK folder
+        run: 'cd cdk'
 
       - name: cdk diff
-        run: 'cd cdk'
         uses: youyo/aws-cdk-github-actions@v2
         with:
           cdk_subcommand: 'diff'
