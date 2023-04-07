@@ -1,29 +1,55 @@
-name: Deploy AWS CDK
-on: [push, workflow_dispatch]
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  aws_cdk:
+  build:
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+
     steps:
-
-      - name: Checkout Repo
-        uses: actions/checkout@v2
-
-      - name: Configure aws credentials
-        uses: aws-actions/configure-aws-credentials@v1
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
-          aws-region: 'us-east-1'
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
+# name: Deploy AWS CDK
+# on: [push, workflow_dispatch]
 
-      - name: Install Dependencies and Build
-        run: 'npm i'
-        working-directory: ./cdk
+# jobs:
+#   aws_cdk:
+#     runs-on: ubuntu-latest
+#     steps:
 
-      - name: CDK Synth
-        run: 'cdk synth'
-        working-directory: ./cdk
+#       - name: Checkout Repo
+#         uses: actions/checkout@v3
 
-      - name: CDK Deploy 
-        run: 'cdk deploy --all --require-approval never'
-        working-directory: ./cdk
+#       - name: Configure aws credentials
+#         uses: aws-actions/configure-aws-credentials@v1
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+#           aws-region: 'us-east-1'
+
+#       - name: Install Dependencies
+#         run: 'npm i'
+#         working-directory: ./cdk
+
+#       - name: CDK Synth
+#         run: 'cdk synth'
+#         working-directory: ./cdk
+
+#       - name: CDK Deploy 
+#         run: 'cdk deploy --all --require-approval never'
+#         working-directory: ./cdk
