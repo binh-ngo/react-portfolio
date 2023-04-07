@@ -18,7 +18,7 @@ jobs:
 
       - name: Install Dependencies and Build
         run: 'npm i'
-        npm: 'npm run build'
+        run: 'npm run build'
         working-directory: ./cdk
 
       - name: CDK Synth
