@@ -63,14 +63,6 @@ export class ReactPortfolioStack extends Stack {
         ],
       },
     ],
-    // errorConfigurations: [
-    //   {
-    //     errorCode: 403,
-    //     errorCachingMinTtl: 10,
-    //     responseCode: 200,
-    //     responsePagePath: "/index.html"
-    //   },
-    // ],
   }
   );
   new ARecord(this, "ARecord", {

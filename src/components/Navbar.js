@@ -5,15 +5,15 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
   AiOutlinePhone,
+  AiOutlineTool,
 } from "react-icons/ai";
-
+import {FiPenTool} from "react-icons/fi"
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -39,7 +39,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <strong>Binh-Nguyen Ngo</strong>
+          <strong>Binh Ngo</strong>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -98,7 +98,17 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <FiPenTool style={{ marginBottom: "2px" }} /> Blogs
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                href="https://d3dj3a4bm3qbww.cloudfront.net/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineTool style={{ marginBottom: "2px" }} /> Code Tools
               </Nav.Link>
             </Nav.Item>
 

@@ -5,8 +5,8 @@ import eatsy from "../../assets/eatsy.png";
 import videoShare from "../../assets/Screenshot 2023-03-05 at 1.29.22 PM.png";
 import dailySchedule from "../../assets/dailyschedule.png";
 import ecommerce from "../../assets/ecommerce.jpg"
-import readme from "../../assets/readme.png"
 import employee from "../../assets/employee.jpg"
+import cheatsheet from "../../assets/cheatsheet.png"
 
 function Projects() {
   return (
@@ -40,6 +40,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={cheatsheet}
+              isBlog={false}
+              title="Coding Cheatsheet"
+              description="This application is a project that is continuously in progress as I learn more and more throughout my journey. Created with React and deployed on AWS through CDK."
+              ghLink="https://github.com/binh-ngo/code-tools"
+              demoLink="https://d3dj3a4bm3qbww.cloudfront.net/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={ecommerce}
               isBlog={false}
               title="E-Commerce Database"
@@ -68,15 +79,6 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={readme}
-              isBlog={false}
-              title="README Generator"
-              description="This application is a README generator that is used from the command line. The application provides a series of prompts in order to obtain information from the user to create a professional README."
-              ghLink="https://github.com/binh-ngo/README-generator"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
