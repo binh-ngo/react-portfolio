@@ -94,7 +94,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://dev.to/binhsta/"
+                href="https://binhngo.hashnode.dev/"
                 target="_blank"
                 rel="noreferrer"
               >
