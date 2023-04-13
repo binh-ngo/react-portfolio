@@ -2,7 +2,8 @@
   
 ## Description
   
-  This is my professional portfolio that includes multiple sections: About, Projects, Resume, Blogs, and Contact. 
+  This is my professional portfolio that includes multiple sections: About, Projects, Resume, Blogs, and Contact.
+  Please feel free to check it out at [binhngo.me](http://binhngo.me)
   
 
 ![badge](https://img.shields.io/badge/license--blue)
@@ -24,8 +25,6 @@
   Email: [bnngo97@gmail.com](mailto:bnngo97@gmail.com)
       
   ## License
-        
-  *This application has the .*
         
   For more information please view the [license description]().
     
