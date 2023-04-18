@@ -369,8 +369,34 @@ button:focus {
   transform: scale(1.1);
   box-shadow: 0 0 15px #2b72eb;
 }
-.img-fluid {
-  border-radius: 5%;
+
+.blob {
+  width: 400px;
+  height: 525px;
+  overflow: hidden;
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  background: url('./assets/5022.JPEG');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  animation: blob 3.7s linear infinite;
+}
+
+@keyframes blob {
+  0%, 100% {
+      border-radius:
+          42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+
+  33% {
+      border-radius:
+          42% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+
+  66% {
+      border-radius:
+          100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
 }
 
 .img-fluid:hover {
