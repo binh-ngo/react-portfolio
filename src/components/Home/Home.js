@@ -33,7 +33,7 @@ function Home() {
               <img
                 src={profile}
                 alt="home pic"
-                className="blob"
+                className="blob-home"
                 style={{ maxHeight: "700px" }}
               />
             </Col>
