@@ -43,7 +43,7 @@ function Projects() {
               imgPath={cheatsheet}
               isBlog={false}
               title="Coding Cheatsheet"
-              description="This application is a project that is continuously in progress as I learn more and more throughout my journey. Created with React and deployed on AWS through CDK."
+              description="This application is a project that is continuously in progress as I learn more and more throughout my journey. This application will feature content helpful content on subjects like React, AWS CDK, Algorithms, and Leetcode Problems. Created with React and deployed on AWS through CDK."
               ghLink="https://github.com/binh-ngo/code-tools"
               demoLink="https://d3dj3a4bm3qbww.cloudfront.net/"
             />
@@ -74,7 +74,7 @@ function Projects() {
               imgPath={dailySchedule}
               isBlog={false}
               title="Daily Schedule App"
-              description="I created a program that allows the user to manage their daily schedule. Hour blocks are colored based on their relationship to the current time of the local machine (which is shown at the top of the page) that the user is using. The user is able to type what they need to do during the specific time-blocks and they can save it to the local storage after clicking the provided button. The program then retrieves the task from the local storage so the burden of remembering the tasks is solely the computer's responsibility."
+              description="I created a program that allows the user to manage their daily schedule. Hour blocks are colored in relation to the current time of the local machine. The user is able to list their tasks and save it to the local storage after clicking the provided button."
               ghLink="https://github.com/binh-ngo/daily-schedule"
             />
           </Col>
