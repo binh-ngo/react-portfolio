@@ -30,7 +30,7 @@ function About() {
             className="about-img"
           >
             <img src={atom}
-                 style={{height:"700px", marginTop:"-35%"}} 
+                 style={{height:"700px", marginTop:"-35%", marginBottom:"-25%"}} 
                  alt="about" />
           </Col>
         </Row>
