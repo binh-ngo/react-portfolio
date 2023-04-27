@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptop from "../../assets/ales-nesetril-Im7lZjxeLhg-unsplash (1).jpg";
+import atom from "../../assets/atom.png";
 import Toolstack from "./Toolstack";
 
 function About() {
@@ -29,7 +29,9 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptop} alt="about" className="blob-about" />
+            <img src={atom}
+                 style={{height:"700px", marginTop:"-35%"}} 
+                 alt="about" />
           </Col>
         </Row>
         <h1 className="project-heading">
