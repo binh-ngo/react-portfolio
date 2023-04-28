@@ -43,7 +43,7 @@ function Projects() {
               imgPath={cheatsheet}
               isBlog={false}
               title="Coding Cheatsheet"
-              description="This application is a project that is continuously in progress as I learn more and more throughout my journey. This application will feature content helpful content on subjects like React, AWS CDK, Algorithms, and Leetcode Problems. Created with React and deployed on AWS through CDK."
+              description="This application is a project that is continuously in progress as I learn more and more throughout my journey. This application will feature content helpful content on subjects like React, AWS CDK, Algorithms, and Leetcode Problems. Created with React for the frontend, DynamoDB for the backend, and deployed on AWS through CDK."
               ghLink="https://github.com/binh-ngo/code-tools"
               demoLink="https://d3dj3a4bm3qbww.cloudfront.net/"
             />
