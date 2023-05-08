@@ -247,8 +247,9 @@ button:focus {
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url(./assets/5951-2.jpg);
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
