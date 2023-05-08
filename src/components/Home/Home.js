@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import profile from "../../assets/5022.JPEG";
+import profile from "../../assets/5022.webp";
 import Home2 from "./Home2";
 import Type from "./Type";
 

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import atom from "../../assets/atom.png";
+import atom from "../../assets/atom.webp";
 import Toolstack from "./Toolstack";
 
 function About() {

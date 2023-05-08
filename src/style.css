@@ -376,18 +376,7 @@ button:focus {
   height: 525px;
   overflow: hidden;
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-  background: url('./assets/5022.JPEG');
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
-  animation: blob 3.7s linear infinite;
-}
-.blob-about {
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-  background: url('./assets/5022.JPEG');
+  background: url('./assets/5022.webp');
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, .2);

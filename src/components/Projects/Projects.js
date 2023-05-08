@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import eatsy from "../../assets/eatsy.png";
-import videoShare from "../../assets/Screenshot 2023-03-05 at 1.29.22 PM.png";
-import dailySchedule from "../../assets/dailyschedule.png";
-import ecommerce from "../../assets/ecommerce.jpg"
-import employee from "../../assets/employee.jpg"
-import cheatsheet from "../../assets/cheatsheet.png"
-import pomodoro from "../../assets/pomodoro.png"
+import eatsy from "../../assets/eatsy.webp";
+import videoShare from "../../assets/Screenshot 2023-03-05 at 1.29.22 PM.webp";
+import dailySchedule from "../../assets/dailyschedule.webp";
+import ecommerce from "../../assets/ecommerce.webp"
+import employee from "../../assets/employee.webp"
+import cheatsheet from "../../assets/cheatsheet.webp"
+import pomodoro from "../../assets/pomodoro.webp"
 
 function Projects() {
   return (
