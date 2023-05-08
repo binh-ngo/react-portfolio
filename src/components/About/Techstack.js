@@ -1,12 +1,12 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { TbBrandNextjs } from "react-icons/tb"
 import { SiAmazonaws, SiGraphql, SiTypescript } from "react-icons/si"
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiGit,
   DiPython,
   DiMysql,
 } from "react-icons/di";
@@ -25,6 +25,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
         <div className="text">React</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandNextjs />
+        <div className="text">Next.js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
@@ -49,10 +53,6 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
         <div className="text">MongoDB</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-        <div className="text">Git</div>
       </Col>
     </Row>
   );
