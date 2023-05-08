@@ -142,6 +142,7 @@ button:focus {
 }
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
+  margin-left: -1rem;
 }
 
 .logo {

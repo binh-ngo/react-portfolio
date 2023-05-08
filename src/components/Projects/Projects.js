@@ -7,6 +7,7 @@ import dailySchedule from "../../assets/dailyschedule.png";
 import ecommerce from "../../assets/ecommerce.jpg"
 import employee from "../../assets/employee.jpg"
 import cheatsheet from "../../assets/cheatsheet.png"
+import pomodoro from "../../assets/pomodoro.png"
 
 function Projects() {
   return (
@@ -46,6 +47,17 @@ function Projects() {
               description="This application is a project that is continuously in progress as I learn more and more throughout my journey. This application will feature content helpful content on subjects like React, AWS CDK, Algorithms, and Leetcode Problems. Created with React for the frontend, DynamoDB for the backend, and deployed on AWS through CDK."
               ghLink="https://github.com/binh-ngo/code-tools"
               demoLink="https://d3dj3a4bm3qbww.cloudfront.net/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pomodoro}
+              isBlog={false}
+              title="Pomodoro Timer"
+              description="This is a traditional pomodoro timer that is used to create a calm and serene work environment while encouraging you to be as productive as you can be. This application is a Next.js project written in Typescript, styled in Tailwind, and is deployed on AWS through CDK."
+              ghLink="https://github.com/binh-ngo/pomodoro"
+              demoLink="https://d8769wj4hnbhr.cloudfront.net"
             />
           </Col>
 
