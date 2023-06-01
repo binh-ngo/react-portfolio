@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import profile from "../../assets/5022.webp";
+import profile from "../../assets/52938470707_bb53e3a982_o.webp";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -11,7 +11,7 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 15 }} className="heading"> 
                 Hey there!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   🤙🏽
@@ -33,8 +33,8 @@ function Home() {
               <img
                 src={profile}
                 alt="home pic"
-                className="blob-home"
-                style={{ maxHeight: "700px" }}
+                // className="blob-home"
+                style={{ maxHeight: "600px" }}
               />
             </Col>
           </Row>
