@@ -12,6 +12,7 @@ const app = new App();
 class MyPortfolio extends Stack {
   constructor(parent: App, name: string, props: StackProps) {
     super(parent, name, props);
+    
     const certificate = new CertificateStack(this, "CertificateStack", {
       env: props.env as Environment,
       domainName: "binhngo.me",
