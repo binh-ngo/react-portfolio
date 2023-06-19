@@ -372,7 +372,7 @@ button:focus {
   box-shadow: 0 0 15px #2b72eb;
 }
 
-.blob-home {
+/* .blob-home {
   width: 400px;
   height: 525px;
   overflow: hidden;
@@ -382,7 +382,7 @@ button:focus {
   background-position: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, .2);
   animation: blob 3.7s linear infinite;
-}
+} */
 
 @keyframes blob {
   0%, 100% {

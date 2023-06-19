@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import profile from "../../assets/5022.webp";
+import profile from "../../assets/profilepic.webp";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -33,8 +33,8 @@ function Home() {
               <img
                 src={profile}
                 alt="home pic"
-                className="blob-home"
-                style={{ maxHeight: "700px" }}
+                // className="blob-home"
+                style={{ maxWidth: "350px" }}
               />
             </Col>
           </Row>
