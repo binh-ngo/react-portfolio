@@ -8,6 +8,9 @@ import ecommerce from "../../assets/ecommerce.webp"
 import employee from "../../assets/employee.webp"
 import cheatsheet from "../../assets/cheatsheet.webp"
 import pomodoro from "../../assets/pomodoro.webp"
+import stackOverflow from "../../assets/stackoverflow.webp"
+import waitloss from "../../assets/waitloss.webp"
+
 
 function Projects() {
   return (
@@ -17,6 +20,28 @@ function Projects() {
           My Recent <strong className="blue">Projects </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={stackOverflow}
+              isBlog={false}
+              title="StackOverflow Clone"
+              description="My personal emulation of the popular Q&A website. Built with React & Tailwind for the frontend and GraphQL & AWS Appsync for the backend. Written in Typescript and deployed on AWS through CDK."
+              ghLink="https://github.com/binh-ngo/stack-overflow-clone"
+              demoLink="d2dzpzqgth948g.cloudfront.net"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={waitloss}
+              isBlog={false}
+              title="Waitloss.live"
+              description="Application that allows business owners to manage their customers and waitlist with ease. Built with React & Tailwind for the frontend and GraphQL for the backend. Written in Typescript and deployed on AWS through CDK."
+              ghLink="https://github.com/binh-ngo/waitlist"
+              demoLink="d33px9ufiinlrq.cloudfront.net"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={eatsy}
