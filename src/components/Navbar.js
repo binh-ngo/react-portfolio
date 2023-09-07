@@ -8,11 +8,9 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
   AiOutlinePhone,
-  AiOutlineTool,
 } from "react-icons/ai";
 import {FiPenTool} from "react-icons/fi"
 import { CgFileDocument } from "react-icons/cg";
-import { GiTomato } from "react-icons/gi"
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -97,26 +95,6 @@ function NavBar() {
                 rel="noreferrer"
               >
                 <FiPenTool style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://d3dj3a4bm3qbww.cloudfront.net/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiOutlineTool style={{ marginBottom: "2px" }} /> Code Tools
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://d8769wj4hnbhr.cloudfront.net"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GiTomato style={{ marginBottom: "2px" }} /> Pomodoro
               </Nav.Link>
             </Nav.Item>
 

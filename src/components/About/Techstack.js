@@ -1,9 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { TbBrandNextjs } from "react-icons/tb"
-import { SiAmazonaws, SiGraphql, SiTypescript } from "react-icons/si"
+import { SiAmazonaws, SiGraphql, SiTypescript, SiJinja } from "react-icons/si"
 import {
-  DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
@@ -31,8 +30,8 @@ function Techstack() {
         <div className="text">Next.js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-        <div className="text">Javascript</div>
+        <SiJinja />
+        <div className="text">Jinja</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
