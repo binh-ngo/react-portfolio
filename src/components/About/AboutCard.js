@@ -16,7 +16,7 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              - Writing Tech Blogs
+              - Writing AWS focused Tech Blogs
             </li>
             <li className="about-activity">
               - Traveling
