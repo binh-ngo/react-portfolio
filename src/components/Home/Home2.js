@@ -19,7 +19,7 @@ function Home2() {
               <i>
                 <b className="blue"> Javascript </b>
               </i>
-              but I am just getting started. I will always aspire to consistently learn throughout my life.
+              and I strive to be fluent in many more languages. I will always aspire to consistently learn throughout my life.
               <br />
               <br />
               My current interests are developing new &nbsp;
