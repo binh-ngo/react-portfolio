@@ -10,7 +10,7 @@ import cheatsheet from "../../assets/cheatsheet.webp"
 import pomodoro from "../../assets/pomodoro.webp"
 import stackOverflow from "../../assets/stackoverflow.webp"
 import waitloss from "../../assets/waitloss.webp"
-
+import chefsite from "../../assets/chefsite.webp"
 
 function Projects() {
   return (
@@ -20,6 +20,18 @@ function Projects() {
           My Recent <strong className="blue">Projects </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chefsite}
+              isBlog={false}
+              title="Chef Site"
+              description="MVP of this project is a website that features a personally curated gallery of dishes from past colleagues in the food industry. Built with React and Tailwind for the frontend and GraphQL, Appsync, DynamoDB, Lambda, and S3 for the backend. Written in Typescript and deployed on AWS."
+              ghLink="https://github.com/binh-ngo/chef-site"
+              demoLink="d207pofyxzgui1.cloudfront.net"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={stackOverflow}
