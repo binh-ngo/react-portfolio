@@ -11,6 +11,7 @@ import pomodoro from "../../assets/pomodoro.webp"
 import stackOverflow from "../../assets/stackoverflow.webp"
 import waitloss from "../../assets/waitloss.webp"
 import chefsite from "../../assets/chefsite.webp"
+import contractor from "../../assets/contractor.webp"
 
 function Projects() {
   return (
@@ -23,12 +24,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={contractor}
+              isBlog={false}
+              title="Project Estimating for Deck Repair and Remodeling"
+              description="This application optimizes the workflow of project estimators by offering a comprehensive database for managing clients, contractors, and projects, complemented by dynamic image storage capabilities. In addition to serving clients, the platform integrates with Calendly and Google Calendars to facilitate seamless appointment management. It boasts a sophisticated technology stack, featuring React and Bootstrap for the frontend, while the backend is powered by GraphQL, AppSync, DynamoDB, Lambda, and S3. The entire system is meticulously implemented in TypeScript and is hosted on the AWS cloud infrastructure for robust performance and scalability."
+              ghLink="https://github.com/binh-ngo/contractor"
+              demoLink="https://dz3epgj71f8yu.cloudfront.net"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={chefsite}
               isBlog={false}
               title="Chef Site"
               description="MVP of this project is a website that features a personally curated gallery of dishes from past colleagues in the food industry. Built with React and Tailwind for the frontend and GraphQL, Appsync, DynamoDB, Lambda, and S3 for the backend. Written in Typescript and deployed on AWS."
               ghLink="https://github.com/binh-ngo/chef-site"
-              demoLink="d207pofyxzgui1.cloudfront.net"
+              demoLink="https://d207pofyxzgui1.cloudfront.net"
             />
           </Col>
 
@@ -39,7 +51,7 @@ function Projects() {
               title="StackOverflow Clone"
               description="My personal emulation of the popular Q&A website. Built with React & Tailwind for the frontend and GraphQL & AWS Appsync for the backend. Written in Typescript and deployed on AWS through CDK."
               ghLink="https://github.com/binh-ngo/stack-overflow-clone"
-              demoLink="d2dzpzqgth948g.cloudfront.net"
+              demoLink="https://d2dzpzqgth948g.cloudfront.net"
             />
           </Col>
 
@@ -50,7 +62,7 @@ function Projects() {
               title="Waitloss.live"
               description="Application that allows business owners to manage their customers and waitlist with ease. Built with React & Tailwind for the frontend and GraphQL for the backend. Written in Typescript and deployed on AWS through CDK."
               ghLink="https://github.com/binh-ngo/waitlist"
-              demoLink="d33px9ufiinlrq.cloudfront.net"
+              demoLink="https://d33px9ufiinlrq.cloudfront.net"
             />
           </Col>
 
