@@ -11,7 +11,7 @@ import pomodoro from "../../assets/pomodoro.webp"
 import stackOverflow from "../../assets/stackoverflow.webp"
 import waitloss from "../../assets/waitloss.webp"
 import chefsite from "../../assets/chefsite.webp"
-import contractor from "../../assets/contractor.webp"
+import contractor from "../../assets/schedulebuilders.webp"
 
 function Projects() {
   return (
