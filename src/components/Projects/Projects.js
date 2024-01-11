@@ -27,7 +27,7 @@ function Projects() {
               imgPath={contractor}
               isBlog={false}
               title="Project Estimating for Deck Repair and Remodeling"
-              description="This application optimizes the workflow of project estimators by offering a comprehensive database for managing clients, contractors, and projects, complemented by dynamic image storage capabilities. In addition to serving clients, the platform integrates with Calendly and Google Calendars to facilitate seamless appointment management. It boasts a sophisticated technology stack, featuring React and Bootstrap for the frontend, while the backend is powered by GraphQL, AppSync, DynamoDB, Lambda, and S3. The entire system is meticulously implemented in TypeScript and is hosted on the AWS cloud infrastructure for robust performance and scalability."
+              description="This application consists of a database that connects consumers with contractors for home-improvement projects; offers customizable forms for consumers to describe their service request, and provides an automated price estimator to streamline the inefficient process of home improvement estimations. The tech stack features React and Bootstrap for the frontend, while the backend is powered by GraphQL, AppSync, DynamoDB, Lambda, and S3. Project is written in Typescript and deployed on AWS."
               ghLink="https://github.com/binh-ngo/contractor"
               demoLink="https://www.schedule.builders"
             />
