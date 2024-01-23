@@ -31,6 +31,7 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
+                className="profile-image"
                 src={profile}
                 alt="home pic"
                 // className="blob-home"

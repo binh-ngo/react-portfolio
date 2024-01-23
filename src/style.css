@@ -145,6 +145,12 @@ button:focus {
   margin-left: -1rem;
 }
 
+@media (min-width: 1000px) {
+  .home-image {
+    margin-top: -4rem;
+  }
+}
+
 .logo {
   height: 1.4em !important;
   width: 2.5em !important;
@@ -311,11 +317,27 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+
+}
+
+.home-image {
+  height: auto;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.profile-image {
+  border-radius: 25px;
+}
+
+.home-about-title {
+  color: white !important;
+
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 1rem !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
