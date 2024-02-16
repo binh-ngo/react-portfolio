@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
-  SiPostman,
   SiInsomnia,
   SiAmazons3,
   SiAmazondynamodb,
@@ -10,12 +9,17 @@ import {
   SiAwslambda,
   SiAmazonapigateway,
   SiTailwindcss,
-  SiAmazoncloudwatch,
+  SiXcode
 } from "react-icons/si";
+import { RiOpenaiFill } from "react-icons/ri";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <RiOpenaiFill />
+        <div className="text">OpenAI</div>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazondynamodb />
         <div className="text">DynamoDB</div>
@@ -26,7 +30,7 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazonapigateway />
-        <div className="text">API gateway</div>
+        <div className="text">API Gateway</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazons3 />
@@ -37,8 +41,8 @@ function Toolstack() {
         <div className="text">Tailwind</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAmazoncloudwatch />
-        <div className="text">Cloudwatch</div>
+        <SiXcode />
+        <div className="text">XCode</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
@@ -51,10 +55,6 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiInsomnia />
         <div className="text">Insomnia</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-        <div className="text">Postman</div>
       </Col>
     </Row>
   );

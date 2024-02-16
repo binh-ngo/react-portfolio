@@ -25,7 +25,7 @@ function Home2() {
               and I strive to be proficient in many more languages by consistently learning throughout my life.
               <br />
               <br />
-              My current interests are developing new &nbsp;
+              My current interests are developing new apps using&nbsp;
               <i>
                 <b className="blue">Artificial Intelligence and Machine Learning </b> and
                 {" "}
