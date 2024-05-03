@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {AiFillGithub} from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import homeImg from "../../assets/home.webp"
+import homeImg from "../../assets/profile.webp"
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">

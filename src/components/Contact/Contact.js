@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 
 function Contact() {
   const form = useRef();
+  const [clicked, setClicked] = React.useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -47,6 +48,7 @@ function Contact() {
 
         <input className="contactBtn" type="submit" value="Send" />
       </Form>
+      {clicked && <p className="mt-4 text-center">Thank you for your message! I will get back to you soon!</p>}
     </div>
     );
 

@@ -12,6 +12,9 @@ import stackOverflow from "../../assets/stackoverflow.webp"
 import waitloss from "../../assets/waitloss.webp"
 import chefsite from "../../assets/chefsite.webp"
 import contractor from "../../assets/schedulebuilders.webp"
+import modbeauty from "../../assets/modbeauty.webp"
+import repiper from "../../assets/repiper.webp"
+import pokerequity from "../../assets/pokerequity.webp"
 
 function Projects() {
   return (
@@ -35,10 +38,43 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={repiper}
+              isBlog={false}
+              title="Repiping Services for the City of Seattle"
+              description="This application is a website that connects consumers with contractors for repiping services in the city of Seattle. The tech stack features React and Tailwind for the frontend, while the backend is powered by GraphQL, AppSync, DynamoDB, Lambda, and S3. Project is written in Typescript and deployed on AWS."
+              ghLink="https://github.com/binh-ngo/repiper"
+              demoLink="https://d6v3xcfnjiwnn.cloudfront.net/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={modbeauty}
+              isBlog={false}
+              title="Mod Beauty Co." 
+              description="This application provides the client with a website that showcases their services and allows potential customers to book appointments. The tech stack features React and Tailwind for the frontend. Project is written in Typescript and deployed on AWS."
+              ghLink="https://github.com/binh-ngo/lash"
+              demoLink="https://www.schedule.builders"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pokerequity}
+              isBlog={false}
+              title="Poker Equity Calculator"
+              description="This application is a poker equity calculator that allows the user to test their knowledge on the probability of winning, losing, or tying with their hand. This application is built with React and Tailwind for the frontend and deployed on AWS through CDK."
+              ghLink="https://github.com/binh-ngo/poker-equity"
+              demoLink="https://dx7iseg0t77ix.cloudfront.net/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={chefsite}
               isBlog={false}
               title="Chef Site"
-              description="MVP of this project is a website that features a personally curated gallery of dishes from past colleagues in the food industry. Built with React and Tailwind for the frontend and GraphQL, Appsync, DynamoDB, Lambda, and S3 for the backend. Written in Typescript and deployed on AWS."
+              description="Since I work as a private caterer as my side gig, I want to offer a website where potential clients can see my work and help organize future events. Built with React and Tailwind for the frontend and GraphQL, Appsync, DynamoDB, Lambda, and S3 for the backend. Written in Typescript and deployed on AWS."
               ghLink="https://github.com/binh-ngo/chef-site"
               demoLink="https://d207pofyxzgui1.cloudfront.net"
             />
